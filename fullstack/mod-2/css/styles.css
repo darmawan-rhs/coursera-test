@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 h1 {
   margin-bottom: 15px;
   text-align: center;
@@ -20,6 +21,7 @@ h2, p {
 div#container {
   padding-top: 40px;
 }
+
 #box {
   margin: 0 10px 0 10px;
   border: 1px solid black;
@@ -43,7 +45,7 @@ div#container {
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-.col-lg-4 {
+  .col-lg-4 {
     float: left;
     width: 33.33%
   }
@@ -51,8 +53,15 @@ div#container {
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-.col-md-6{
+  .col-md-6, .col-md-12 {
     float: left;
+  }
+
+  .col-md-6 {
     width: 50%
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 }
